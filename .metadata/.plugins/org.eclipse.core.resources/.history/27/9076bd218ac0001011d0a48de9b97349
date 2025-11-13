@@ -1,7 +1,5 @@
 package com.twt.data;
 
-
-//Login Data
 public class LoginData {
 	
 	private String username;
