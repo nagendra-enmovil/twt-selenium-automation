@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\Nagendra\AppData\Local\Temp\testng-eclipse-75334861\testng-customsuite.xml</span>
+                    <span>C:\Users\Nagendra\AppData\Local\Temp\testng-eclipse--1808516102\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -103,7 +103,7 @@
                     <div class="method-list-content failed suite-Default_suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.twt.testscripts.FGITestScripts" class="method navigator-link" hash-for-method="fgiTest">fgiTest</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="com.twt.testscripts.IMTestScripts" class="method navigator-link" hash-for-method="IMTest">IMTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Default_suite -->
@@ -121,16 +121,24 @@
           <div class="suite-Default_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">com.twt.testscripts.FGITestScripts</span>
+              <span class="class-name">com.twt.testscripts.IMTestScripts</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="fgiTest">
-                  </a> <!-- fgiTest -->
-                  <span class="method-name">fgiTest</span>
-                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;com.twt.data.LoginData.getUsername()&quot; because &quot;this.logindata&quot; is null
-	at com.twt.testscripts.FGITestScripts.fgiTest(FGITestScripts.java:34)
+                  <a name="IMTest">
+                  </a> <!-- IMTest -->
+                  <span class="method-name">IMTest</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for com.twt.config.BrowserDriver$1@7573e12f (tried for 45 second(s) with 2000 milliseconds interval)
+Build info: version: &apos;4.31.0&apos;, revision: &apos;1ef9f18787*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.4&apos;
+Driver info: driver.version: BrowserDriver
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:265)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.twt.config.BrowserDriver.waitForPageToLoad(BrowserDriver.java:65)
+	at com.twt.config.BrowserDriver.waitForPageToLoad(BrowserDriver.java:74)
+	at com.twt.services.IMService.ImActions(IMService.java:19)
+	at com.twt.testscripts.IMTestScripts.IMTest(IMTestScripts.java:35)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -160,7 +168,7 @@
 
 </div> <!-- stack-trace -->
                   <em>
-(Finished Goods Inventory Test)                  </em>
+(Inventory Management Screen Test)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -168,7 +176,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Nagendra\AppData\Local\Temp\testng-eclipse-75334861\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\Nagendra\AppData\Local\Temp\testng-eclipse--1808516102\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -177,7 +185,7 @@
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.twt.testscripts.FGITestScripts&quot;/&gt;
+      &lt;class name=&quot;com.twt.testscripts.IMTestScripts&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -219,14 +227,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'fgiTest')
-data.setCell(0, 2, 'com.twt.testscripts.FGITestScripts')
-data.setCell(0, 3, 7);
+data.setCell(0, 1, 'IMTest')
+data.setCell(0, 2, 'com.twt.testscripts.IMTestScripts')
+data.setCell(0, 3, 46356);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 7 ms</span>
+              <span class="suite-total-time">Total running time: 46 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -252,26 +260,28 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.twt.testscripts.FGITestScripts</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.twt.testscripts.IMTestScripts</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
                 <span class="method-name">startReport</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
+              <div class="configuration-class before">
+                <span class="method-name">init</span>
+                <span class="method-start">161 ms</span>
+              </div> <!-- configuration-class before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">fgiTest</span>
-                <span class="method-start">173 ms</span>
+                <span class="method-name">IMTest</span>
+                <span class="method-start">76546 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">getResult([TestResult name=fgiTest on [FGITestScripts passed=0 failed=0 skipped=0] status=FAILURE method=FGITe...)</span>
-                <span class="method-start">185 ms</span>
+                <span class="method-name">getResult([TestResult name=IMTest on [IMTestScripts passed=0 failed=0 skipped=0] status=FAILURE method=IMTestS...)</span>
+                <span class="method-start">122906 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-suite after">
                 <span class="method-name">endReport</span>
-                <span class="method-start">245 ms</span>
+                <span class="method-start">122942 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -16,12 +16,8 @@ public class FGIService {
 	}
 	
 	public FGIService fgiActions() {
-		try {
-			BrowserDriver.waitForPageToLoad();
-			fgiobjects.getFgiButton().click();
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
+		BrowserDriver.waitForPageToLoad();
+		fgiobjects.getFgiButton().click();
 		return this;
 	}
 }

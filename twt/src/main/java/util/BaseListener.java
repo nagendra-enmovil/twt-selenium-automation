@@ -23,12 +23,12 @@ public class BaseListener extends TestListenerAdapter {
 	@BeforeSuite
 	public void startReport() {
 		extent = new ExtentReports();
-		spark = new ExtentSparkReporter("Reports//WMS.html");
+		spark = new ExtentSparkReporter("Reports//TWT.html");
 		extent.attachReporter(spark);
 		extent.setSystemInfo("Host Name", "Enmovil");
 		extent.setSystemInfo("Environment", "Dev");
 		extent.setSystemInfo("User Name", "Nagendra");
-		spark.config().setDocumentTitle("WMS");
+		spark.config().setDocumentTitle("TWT");
 		spark.config().setReportName("Regression Result");
 		spark.config().setTheme(Theme.DARK);
 	}

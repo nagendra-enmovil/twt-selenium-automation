@@ -7,6 +7,7 @@ public class FGIPageObjects {
 	
 	@FindBy(xpath = "//button[text() = 'Finished Goods Inventory']")
 	private WebElement fgiButton;
+	
 
 	public WebElement getFgiButton() {
 		return fgiButton;
@@ -15,6 +16,5 @@ public class FGIPageObjects {
 	public void setFgiButton(WebElement fgiButton) {
 		this.fgiButton = fgiButton;
 	}
-	
 	
 }

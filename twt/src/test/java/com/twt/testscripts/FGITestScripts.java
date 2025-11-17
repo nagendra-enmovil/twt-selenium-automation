@@ -1,6 +1,7 @@
 package com.twt.testscripts;
 
-import org.junit.BeforeClass;
+
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import org.testng.log4testng.Logger;
 
@@ -27,11 +28,11 @@ public class FGITestScripts extends BaseListener{
 		InitializeViews.init();
 		Logger = extent.createTest("Finished Goods Inventory Screen");
 		BrowserDriver.getCurrentDriver().navigate().to(PropertyLoader.getTWTURL());
+		loginservice.loginToTwt(logindata.getUsername(), logindata.getPassword());
 	}
 	
 	@Test(description="Finished Goods Inventory Test")
 	public void fgiTest() {
-		loginservice.loginToTwt(logindata.getUsername(), logindata.getPassword());
 		fgiservice.fgiActions();
 	}
 }

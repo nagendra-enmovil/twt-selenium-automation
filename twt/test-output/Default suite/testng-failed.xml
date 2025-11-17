@@ -3,14 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.twt.testscripts.FGITestScripts">
+      <class name="com.twt.testscripts.IMTestScripts">
         <methods>
           <include name="endReport"/>
           <include name="startReport"/>
+          <include name="init"/>
           <include name="getResult"/>
-          <include name="fgiTest"/>
+          <include name="IMTest"/>
         </methods>
-      </class> <!-- com.twt.testscripts.FGITestScripts -->
+      </class> <!-- com.twt.testscripts.IMTestScripts -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -25,10 +25,6 @@ public class PropertyLoader {
 		return RESOURCE_BUNDLE.getString("TWTDevURL");
 	}
 	
-	public static String getTWTPRODURL() {
-		return RESOURCE_BUNDLE.getString("TWTProdURL");
-	}
-	
 	public static String getLoginData() {
 		return RESOURCE_BUNDLE.getString("loginDataPath");
 	}
