@@ -17,7 +17,7 @@ public class IMPageObjects {
 	@FindBy(xpath = "//span[text() = 'Finished Goods Inventory']")
 	private WebElement finishedGoodsInv;
 	
-	@FindBy(xpath = "//span[text() = 'Inventory Dashboard']")
+	@FindBy(xpath = "//span[text() = 'Inventory Dashboards']")
 	private WebElement inventoryDashboard;
 	
 	@FindBy(xpath = "//span[text() = 'Historic Sales']")

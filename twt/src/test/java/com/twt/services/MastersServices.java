@@ -17,33 +17,25 @@ public class MastersServices {
 	
 	public MastersServices mastersActions() {
 		BrowserDriver.waitForPageToLoad();
-		mastersobjects.getSideMenu().click();
-		mastersobjects.getMasterButton().click();
-		mastersobjects.getFgMasterButton().click();
-		mastersobjects.getSkuMaster().click();
-		BrowserDriver.wait(1);
-		mastersobjects.getSourceMaster().click();
-		BrowserDriver.wait(1);
-		mastersobjects.getDestinationStoreMaster().click();
-		BrowserDriver.wait(1);
-		mastersobjects.getSourceDestinationMapping().click();
-		BrowserDriver.wait(1);
-		mastersobjects.getMastersDemandPlan().click();
-		BrowserDriver.wait(1);
-		mastersobjects.getCalendarMaster().click();
-		BrowserDriver.wait(1);
-		mastersobjects.getBatchMaster().click();
-		BrowserDriver.wait(1);
-		mastersobjects.getPincodeMapping().click();
-		BrowserDriver.wait(1);
-		mastersobjects.getFgMasterButton().click();
-		BrowserDriver.wait(1);
-		mastersobjects.getPmMasterButton().click();
-		mastersobjects.getPmSkuMaster().click();
-		mastersobjects.getConversionMetric().click();
-		mastersobjects.getPmFgMapping().click();
-		mastersobjects.getPmMasterButton().click();
-		mastersobjects.getMasterButton().click();
+		BrowserDriver.clickElement(mastersobjects.getSideMenu());
+		BrowserDriver.clickElement(mastersobjects.getMasterButton());
+		BrowserDriver.clickElement(mastersobjects.getFgMasterButton());
+		BrowserDriver.clickElement(mastersobjects.getSkuMaster());
+		BrowserDriver.clickElement(mastersobjects.getSourceMaster());
+		BrowserDriver.clickElement(mastersobjects.getDestinationStoreMaster());
+		BrowserDriver.clickElement(mastersobjects.getSourceDestinationMapping());
+		BrowserDriver.clickElement(mastersobjects.getMastersDemandPlan());
+		BrowserDriver.clickElement(mastersobjects.getCalendarMaster());
+		BrowserDriver.clickElement(mastersobjects.getBatchMaster());
+		BrowserDriver.clickElement(mastersobjects.getPincodeMapping());
+		BrowserDriver.clickElement(mastersobjects.getFgMasterButton());
+		BrowserDriver.clickElement(mastersobjects.getPmMasterButton());
+		BrowserDriver.clickElement(mastersobjects.getPmSkuMaster());
+		BrowserDriver.clickElement(mastersobjects.getConversionMetric());
+		BrowserDriver.clickElement(mastersobjects.getPmFgMapping());
+		BrowserDriver.clickElement(mastersobjects.getPmMasterButton());
+		BrowserDriver.clickElement(mastersobjects.getMasterButton());
+
 		return this;
 	}
 }

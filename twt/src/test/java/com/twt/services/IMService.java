@@ -17,16 +17,12 @@ public class IMService {
 	
 	public IMService ImActions() {
 		BrowserDriver.waitForPageToLoad();
-		imobjects.getSideMenu().click();
-		BrowserDriver.wait(1);
-		imobjects.getFgStockStatus().click();
-		BrowserDriver.wait(1);
-		imobjects.getFinishedGoodsInv().click();
-		BrowserDriver.wait(5);
-		imobjects.getInventoryDashboard().click();
-		BrowserDriver.wait(1);
-		imobjects.getHistoricSales().click();
-		imobjects.getiMButton().click();
+		BrowserDriver.clickElement(imobjects.getSideMenu());
+		BrowserDriver.clickElement(imobjects.getFgStockStatus());
+		BrowserDriver.clickElement(imobjects.getFinishedGoodsInv());
+		BrowserDriver.clickElement(imobjects.getInventoryDashboard());
+		BrowserDriver.clickElement(imobjects.getHistoricSales());
+		BrowserDriver.clickElement(imobjects.getiMButton());
 		return this;
 	}
 }

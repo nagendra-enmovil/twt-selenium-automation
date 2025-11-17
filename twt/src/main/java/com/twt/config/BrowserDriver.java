@@ -38,6 +38,13 @@ public class BrowserDriver {
 		return getCurrentDriver(PropertyLoader.getBrowser());
 	}
 	
+	public static void clickElement(WebElement element) {
+	    new WebDriverWait(BrowserDriver.getCurrentDriver(), Duration.ofSeconds(10))
+	            .until(ExpectedConditions.elementToBeClickable(element))
+	            .click();
+	}
+
+	
 	public static void wait(int time) {
 		try {
 			for(int i = 0; i <= time; i++) {
