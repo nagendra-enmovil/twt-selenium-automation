@@ -5,6 +5,7 @@ import org.openqa.selenium.WebDriver;
 import com.twt.config.BrowserDriver;
 import com.twt.services.FGIService;
 import com.twt.services.IMService;
+import com.twt.services.IndentationServices;
 import com.twt.services.LoginService;
 import com.twt.services.MastersServices;
 
@@ -19,5 +20,6 @@ public class InitializeViews {
 		FGIService.init();
 		MastersServices.init();
 		IMService.init();
+		IndentationServices.init();
 	 }
 }

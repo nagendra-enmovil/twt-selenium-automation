@@ -3,15 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.twt.testscripts.IMTestScripts">
+      <class name="com.twt.testscripts.IndentsTestScripts">
         <methods>
           <include name="endReport"/>
-          <include name="startReport"/>
           <include name="init"/>
+          <include name="startReport"/>
           <include name="getResult"/>
-          <include name="IMTest"/>
+          <include name="indentsTests"/>
         </methods>
-      </class> <!-- com.twt.testscripts.IMTestScripts -->
+      </class> <!-- com.twt.testscripts.IndentsTestScripts -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
